@@ -1,14 +1,12 @@
 <div class="container py-5">
     <div class="card">
-      <div class="card-header text-light bg-primary">
-        <div class="card-header d-grid gap-2 d-md-flex">
+      <div class="card-header text-light bg-primary d-md-flex">
           <h5 class="text-white m-2">{{title}}</h5>
           <div class="ms-auto">
             <button class="btn-light btn-sm m-1" (click)="filterGender('Female')">F</button>
             <button class="btn-light btn-sm m-1" (click)="filterGender('Male')">M</button>
             <button class="btn-light btn-sm m-1" (click)="showAll()">A</button>
           </div>
-        </div>
         
       </div>
   
@@ -20,7 +18,7 @@
                 <td class="">{{participant.name}}</td>
                 <!-- <td class="text-sm badge bg-secondary ">{{participant.age}}</td> -->
                 <td>
-                    <span class="badge bg-primary">{{ participant.age }}</span>
+                    <span class="badge bg-info d-grid gap-2">{{ participant.age }}</span>
                 </td>
               </tr>
             </tbody>
